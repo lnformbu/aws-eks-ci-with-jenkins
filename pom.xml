@@ -103,11 +103,11 @@
       <artifactId>bootstrap</artifactId>
       <version>${webjars-bootstrap.version}</version>
     </dependency>
-    <dependency>
+    <!-- <dependency>
     <groupId>xml-apis</groupId>
       <artifactId>xml-apis</artifactId>
       <version>1.0.b2</version>
-    </dependency>
+    </dependency> -->
 
     <!-- end of webjars -->
 
