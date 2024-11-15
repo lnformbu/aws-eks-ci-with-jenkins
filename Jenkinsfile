@@ -3,9 +3,6 @@ pipeline {
        triggers {
         pollSCM "* * * * *"
        }
-    tools {
-        maven 'Maven' // This should match the name you gave Maven in the Global Tool Configuration
-    }
     stages {
         stage('Build Application') { 
             steps {
@@ -18,11 +15,11 @@ pipeline {
                 echo '=== Testing Petclinic Application ==='
                 sh 'mvn test'
             }
-            // post {
-            //     always {
-            //         junit 'target/surefire-reports/*.xml'
-            //     }
-            // }
+            post {
+                always {
+                    junit 'target/surefire-reports/*.xml'
+                }
+            }
         }
         stage('Build Docker Image') {
             when {
