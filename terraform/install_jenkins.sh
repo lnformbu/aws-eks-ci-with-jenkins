@@ -18,6 +18,9 @@ sudo yum install -y java-17-amazon-corretto
 sudo yum install -y fontconfig  # Required font configuration package
 java -version  # Verify the Java installation
 
+# echo "Install Maven"
+sudo yum install -y maven
+
 # Installing the Jenkins key and repository
 echo "Adding Jenkins repository and key..."
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
