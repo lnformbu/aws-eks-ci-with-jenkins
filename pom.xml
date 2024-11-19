@@ -309,7 +309,7 @@
           </execution>
         </executions>
         <configuration>
-          <repository>ibuchh/spring-petclinic</repository>
+          <repository>lnformbu/spring-petclinic</repository>
         </configuration>
       </plugin-->
 

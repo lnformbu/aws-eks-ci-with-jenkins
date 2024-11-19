@@ -13,3 +13,5 @@ yum install -y kubectl
 
 curl -L https://get.armory.io/halyard/install/latest/macos/InstallArmoryHalyard.sh > InstallArmoryHalyard.sh 
 sudo bash InstallArmoryHalyard.sh --version latest
+
+
